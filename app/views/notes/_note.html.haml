@@ -1,0 +1,5 @@
+.note
+  %p.text= note.text
+  .operations
+    = link_to 'edit', edit_note_path(note)
+    = link_to 'delete', note_path(note), method: 'delete'

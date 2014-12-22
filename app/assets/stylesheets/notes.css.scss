@@ -1,0 +1,20 @@
+// Place all the styles related to the notes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.note {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-right: auto;
+
+  .text {
+    float: left;
+    margin: 0px;
+  }
+
+  .operations {
+    float: right;
+  }
+}

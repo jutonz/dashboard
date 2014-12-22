@@ -38,6 +38,9 @@ gem 'unicorn'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-# Use Haml to expedite markup
+# Use Haml to increase zen
 gem 'haml'
 
+# Use Twitter Bootstrap for styling
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
