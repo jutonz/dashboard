@@ -18,3 +18,13 @@
     float: right;
   }
 }
+
+.notes-tile {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+
+  .note-summary {
+    margin-bottom: 0px;
+  }
+}
