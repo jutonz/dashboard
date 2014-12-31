@@ -1,6 +1,6 @@
 .tile
-  %h3{ class: 'title' } Recent Notes
+  %h3.title Recent Notes
   - tile_notes.each do |note|
-    %p{ class: 'note-summary' }= note.text
+    %p.note-summary= note.text
   = link_to 'View all notes', notes_path
   = link_to 'Add a new note', new_note_path
