@@ -1,8 +1,9 @@
 %h1 Notes
+= link_to 'Add a note', new_note_path, class: 'btn btn-large btn-primary'
 - if @notes.any? 
   - @notes.reverse.each do |note|
     = render note
 - else
   %p There are currently no notes.
 
-= link_to 'Add a note', new_note_path
+= link_to 'Add a note', new_note_path, class: 'btn btn-large btn-primary'

@@ -1,0 +1,1 @@
+Time::DATE_FORMATS[:just_date] = "%e %B %Y"

@@ -1,3 +1,1 @@
-= form_for @note do |form|
-  = form.text_area :text 
-  = form.submit 'Add note'
+= render partial: 'notes/note_form', locals: { note: @note, action: 'new' }

@@ -1,0 +1,10 @@
+.note
+  = form_for note do |form|
+    .note-content
+      = form.text_area :text, value: note.text, class: 'note-textarea'
+    .note-operations
+      - if action == 'new'
+        = form.submit 'Add note', class: 'btn btn-primary'  
+      - elsif action == 'edit'
+        = form.submit 'Update', class: 'btn btn-primary'
+      = link_to 'Cancel', :back, class: 'btn btn-sm btn-warning'

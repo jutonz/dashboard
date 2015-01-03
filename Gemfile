@@ -44,3 +44,6 @@ gem 'haml'
 # Use Twitter Bootstrap for styling
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
+
+# Use local_time to handle time localization
+gem 'local_time'
