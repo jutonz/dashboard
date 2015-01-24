@@ -47,3 +47,6 @@ gem 'twitter-bootstrap-rails'
 
 # Use local_time to handle time localization
 gem 'local_time'
+
+# Use rake for testing 
+gem 'rake', group: :test

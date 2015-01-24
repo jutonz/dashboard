@@ -1,9 +1,14 @@
 class Note < ActiveRecord::Base
+
+  validates :text, presence: true
+
   def formatted_creation_date
     date = created_at
     formatted_date = ''
     if date.today?
-      formatted_date += 'today '
+      formatted_date += 'today'
+    elsif date >= 2.days.ago
+      formatted_date += 'yesterday'
     else 
       formatted_date += "on "
       formatted_date += date.to_formatted_s :just_date

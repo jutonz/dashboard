@@ -142,6 +142,7 @@ DEPENDENCIES
   local_time
   pg
   rails (= 4.1.8)
+  rake
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

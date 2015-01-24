@@ -1,7 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  string: MyText
+correct: &correct
+  text: 'correct'
 
-two:
-  string: MyText
+no_text:
+  text: ''
+
+yesterday:
+  created_at: <%= 1.day.ago %>
+  <<: *correct
+
+five_days_ago:
+  created_at: <%= 5.days.ago %>
+  <<: *correct
+
