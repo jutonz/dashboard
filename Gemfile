@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
+ruby '2.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
-# Use postgresql as the database for Active Record
-gem 'pg'
+# Use postgresql as the database for production...
+gem 'pg', group: :production
+# ...but use sqlite3 for development
+gem 'sqlite3', group: :development
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -50,3 +53,6 @@ gem 'local_time'
 
 # Use rake for testing 
 gem 'rake', group: :test
+
+# Use 12factor for production
+gem 'rails_12factor', group: :production
