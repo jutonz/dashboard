@@ -80,5 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: dashboard_production
-  password: <%= ENV['DASHBOARD_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  # database: dashboard_production
+  # password: <%= ENV['DASHBOARD_DATABASE_PASSWORD'] %>
