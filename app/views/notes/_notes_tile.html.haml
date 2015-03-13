@@ -3,5 +3,8 @@
   - tile_notes.each do |note|
     = link_to notes_path(anchor: note.id) do
       %p.note-summary= note.text_abridged
-  = link_to 'View all notes', notes_path, class: 'btn btn-large btn-default'
+  - unless tile_notes.any?
+    %p.note-summary There aren't any notes right now. You should add one!
+  - if tile_notes.any?
+    = link_to 'View all notes', notes_path, class: 'btn btn-large btn-default'
   = link_to 'Add a new note', new_note_path, class: 'btn bgn-large btn-default'
