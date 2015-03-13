@@ -2,6 +2,6 @@
   .note-content
     %p.text= note.text
     %p.info.text-muted Created #{note.formatted_creation_date} at #{local_time(note.created_at, "%l:%M%P")}
-  .operations
-    = link_to 'edit', edit_note_path(note), class: 'btn btn-xs btn-default'
-    = link_to 'delete', note, method: 'delete', class: 'btn btn-xs btn-warning', confirm: 'Are you sure?'
+    .operations
+      = link_to 'edit', edit_note_path(note), class: 'btn btn-xs btn-default'
+      = link_to 'delete', note, method: 'delete', class: 'btn btn-xs btn-warning', confirm: 'Are you sure?'
