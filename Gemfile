@@ -4,10 +4,8 @@ ruby '2.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
-# Use postgresql as the database for production...
-gem 'pg', group: :production
-# ...but use sqlite3 for development
-gem 'sqlite3', group: :development
+# Use postgres as the database for production
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
